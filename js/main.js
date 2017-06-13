@@ -307,7 +307,7 @@
 
 			
 			submitHandler: function(form) {				
-				var sLoader = $('#submit-loader');			
+				/*var sLoader = $('#submit-loader');			
 
 				$.ajax({   	
 			       dataType: "jsonp",
@@ -341,7 +341,23 @@
 			      	$('#message-warning').html("Something went wrong. Please try again.");
 			         $('#message-warning').fadeIn();
 			      }
-		      });    		
+		      });  */
+				
+		$.ajax({
+  dataType: 'jsonp',
+  url: "http://getsimpleform.com/messages/ajax?form_api_token=aca13323c5a3c757514ab5234145f0b6",
+  data: {
+    name: "John",
+    message: "Boston",
+  }
+}).done(function() {
+  //callback which can be used to show a thank you message
+  //and reset the form
+  alert("Thank you, for contacting us");
+});
+				
+				
+				
 	  		}
 
 		});
