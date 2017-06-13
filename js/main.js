@@ -300,7 +300,7 @@
 
   /* Contact Form
    * ------------------------------------------------------ */
-  var ssContactForm = function() {   	
+ /* var ssContactForm = function() {   	
 
    		
 		$('#contactForm').validate({
@@ -341,7 +341,7 @@
 			      	$('#message-warning').html("Something went wrong. Please try again.");
 			         $('#message-warning').fadeIn();
 			      }
-		      });  */
+		      });  
 				
 		$.ajax({
   dataType: 'jsonp',
@@ -362,7 +362,7 @@
 
 		});
    };	
-
+*/
 
   /* AjaxChimp
 	* ------------------------------------------------------ */
