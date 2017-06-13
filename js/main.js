@@ -300,7 +300,7 @@
 
   /* Contact Form
    * ------------------------------------------------------ */
-  /*var ssContactForm = function() {   	
+  var ssContactForm = function() {   	
 
    		
 		$('#contactForm').validate({
@@ -310,10 +310,11 @@
 				var sLoader = $('#submit-loader');			
 
 				$.ajax({   	
-			      type: "POST",
-			      url: "https://formspree.io/khiarisanaa@gmail.com",
+			       dataType: "jsonp",
+				type: "POST",
+			      url: "http://getsimpleform.com/messages/ajax?form_api_token=aca13323c5a3c757514ab5234145f0b6",
 			      data: $(form).serialize(),
-			      dataType: "json",
+			     
 
 			      beforeSend: function() { 
 			      	setHeader('Access-Control-Allow-Origin', '*');
@@ -345,7 +346,7 @@
 
 		});
    };	
-*/
+
 
   /* AjaxChimp
 	* ------------------------------------------------------ */
