@@ -16,7 +16,7 @@ $mail->IsSMTP();
 
 // As this email.php script lives on the same server as our email server
 // we are setting the HOST to localhost
-$mail->Host = "localhost";  // specify main and backup server
+$mail->Host = "http://juniorinsat.tk";  // specify main and backup server
 
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 
@@ -24,7 +24,7 @@ $mail->SMTPAuth = true;     // turn on SMTP authentication
 // In this case, we setup a test email account with the following credentials:
 // email: send_from_PHPMailer@bradm.inmotiontesting.com
 // pass: password
-$mail->Username = "sana.khiarii@gmail.com";  // SMTP username
+$mail->Username = "khiarisanaa@gmail.com";  // SMTP username
 $mail->Password = "Allah7akbar"; // SMTP password
 
 // $email is the user's email address the specified
@@ -34,7 +34,7 @@ $mail->Password = "Allah7akbar"; // SMTP password
 $mail->From = $email;
 
 // below we want to set the email address we will be sending our email to.
-$mail->AddAddress("khiarisanaa@gmail.com", "Brad Markle");
+$mail->AddAddress("khiarisanaa@gmail.com", "CFE");
 
 // set word wrap to 50 characters
 $mail->WordWrap = 50;
