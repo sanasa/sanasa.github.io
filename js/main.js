@@ -300,7 +300,7 @@
 
   /* Contact Form
    * ------------------------------------------------------ */
- /*  var ssContactForm = function() {   	
+  var ssContactForm = function() {   	
 
    		
 		$('#contactForm').validate({
@@ -311,11 +311,13 @@
 
 				$.ajax({   	
 			      type: "POST",
-			      url: "mail/send_email.php",
+			      url: "//formspree.io/khiarisanaa@gmail.com",
 			      data: $(form).serialize(),
+			      dataType: "json",
 
 			      beforeSend: function() { 
 			      	setHeader('Access-Control-Allow-Origin', '*');
+				      setHeader('Accept', 'application/json');
 					  sLoader.fadeIn(); 
 			      },
 			      success: function(msg) {
@@ -342,7 +344,7 @@
 	  		}
 
 		});
-   };	*/
+   };	
 
 
   /* AjaxChimp
