@@ -311,7 +311,7 @@
 
 				$.ajax({   	
 			      type: "POST",
-			      url: "//formspree.io/khiarisanaa@gmail.com",
+			      url: "https://formspree.io/khiarisanaa@gmail.com",
 			      data: $(form).serialize(),
 			      dataType: "json",
 
